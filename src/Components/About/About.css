@@ -1,0 +1,40 @@
+.About-container{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.About-content{
+    padding-top: 20px;
+    width: 500px;
+    height: 600px;
+}
+.About-content-img{
+    
+    width: 500px;
+    height: 600px; 
+}
+@media (max-width:600px){
+    .About-container{
+        position: relative;
+        padding-bottom: 20px;
+        width: 500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .About-content{
+        width: 440px;
+        height: 500px;
+    }
+    .About-content-img{
+        width: 440px;
+        height: 500px; 
+    }
+} 
+    
+

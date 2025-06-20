@@ -1,0 +1,66 @@
+.GuideBookCard-container {
+    padding-top: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guidebookCard-mainContent {
+    position: relative;
+    margin:auto;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border: 5px solid #F4CE14;
+    font-family: "Jersey 15", serif;
+    font-weight: 440;
+    font-size: 1.4rem;
+    font-style: normal;
+    border-radius: 6%;
+    width: 440px;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ba3276;
+}
+.horizontal-line{
+    border: 2px solid #F4CE14 ;
+    color: #F4CE14;
+    width: 200px;
+    
+}
+.text-content{
+    overflow-y: auto;
+}
+@media (max-width: 600px) {
+    .GuideBookCard-container {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .guidebookCard-mainContent {
+        position: relative;
+        padding: 10px;
+        text-align: center;
+        border: 5px solid #F4CE14;
+        font-family: "Jersey 15", serif;
+        font-weight: 440;
+        font-size: 1.4rem;
+        font-style: normal;
+        border-radius: 6%;
+        width: 440px;
+        height: 600px; 
+        display: flex;
+        flex-direction: column;
+        color: #ba3276;
+    }
+    .text-content{
+        overflow-y: auto;
+    }
+}

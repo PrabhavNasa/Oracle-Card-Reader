@@ -1,0 +1,41 @@
+.Navigation-container{
+    position: relative;
+    margin-top: 55px;
+    height: 80px;
+    width: 100%;
+    background-color: #d2d1cc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shuffle-button{
+    background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
+    border-radius: 10px;
+    border: 3px solid rgb(30, 29, 29);
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.fa-shuffle{
+  font-size: 2rem;
+  color: white;
+}
+.fa-diagram-next{
+    font-size: 2rem;
+    color: white;
+}
+@media (max-width:600px) {
+    .Navigation-container{
+        position: relative;
+        margin-top: 100px;
+        height: 80px;
+        width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

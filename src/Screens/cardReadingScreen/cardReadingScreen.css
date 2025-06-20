@@ -1,0 +1,96 @@
+.cardReading-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.cardReading-main-content{
+        position: relative;
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        font-style: normal;
+    border-radius: 6%;
+    width: 450px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cardReading-box-content{
+    cursor: pointer;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+.cardReading-box-content {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.cardReading-box-content:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+  }
+.link-style{
+    text-decoration: none;
+    color: black;
+}
+.image-style{
+    height: 60px;
+    width: 60px;
+}
+@media (max-width:600px) {
+    .cardReading-container{
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    } 
+    .cardReading-box-content{
+        cursor: pointer;
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        display: flex;
+        gap: 5px;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+        width: 400px;
+        height: 80px;
+        background-image: linear-gradient(to right, rgb(254, 185, 65) ,rgb(255, 244, 95));
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px black;
+    }
+    .cardReading-main-content{
+        position: relative;
+
+        font-family: "Jersey 15", serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        font-style: normal;
+    border-radius: 6%;
+    width: 450px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+}
