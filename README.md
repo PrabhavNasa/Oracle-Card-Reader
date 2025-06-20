@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# Backend Repository Link - 
+# 🔮 Oracle Card Reader
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **Oracle Card Reader** is a full-stack web application that allows users to interact with a custom oracle card system online. Users can draw cards, interpret meanings, save their readings, and revisit their personal oracle history. The application blends spiritual introspection with modern web technology, offering a sleek and intuitive platform for self-guidance and reflection.
 
-## Available Scripts
+## 📌 Project Overview
 
-In the project directory, you can run:
+Oracle cards are a tool for personal reflection, meditation, and insight. This project aims to digitize that experience by providing an interactive interface to draw and interpret oracle cards. Whether for daily guidance or personal journaling, this web app allows users to build a digital history of their readings.
 
-### `npm start`
+This project was built as part of a full-stack development internship and includes features like user authentication, state management with Redux, and backend integration with MongoDB.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🃏 **Interactive Card Drawing**: Users can virtually draw cards from a deck for personalized readings.
+- 📝 **Card Meanings Display**: Each card comes with a predefined interpretation or description.
+- 💾 **Local and Cloud Storage**: Users can save their card readings locally and optionally sync them to a MongoDB database.
+- 🔐 **User Authentication**: Secure login and registration system to keep user readings private.
+- 📊 **Redux State Management**: Efficient handling of app-wide state, including card selection, user data, and saved history.
+- 📱 **Mobile Responsive Design**: Seamless experience across desktops, tablets, and phones.
+- 🧠 **High Code Quality**: Exception management, modular file structure, and test coverage using JUnit (for backend).
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React.js** – Component-based user interface
+- **Redux** – State management
+- **HTML/CSS** – Styling and layout
+- **JavaScript** – Client-side logic
 
-### `npm run build`
+### Backend
+- **Node.js** – JavaScript runtime
+- **Express.js** – Web framework for APIs
+- **MongoDB** – NoSQL database for user/card data
+- **JWT** – For user session authentication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tools & Utilities
+- **Git** – Version control
+- **VSCode** – Development environment
+- **Postman** – API testing
+- **Google Apps Script** – Integrated in leaderboard for data sync
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧑‍💻 How to Run the Project Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/PrabhavNasa/Oracle-Card-Reader.git
+cd Oracle-Card-Reader
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd backend
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Frontend
 
-## Learn More
+```bash
+cd ../frontend
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Set Up Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a `.env` file in the `backend` directory:
 
-### Code Splitting
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Run the App
 
-### Analyzing the Bundle Size
+#### Start Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd backend
+npm run dev
+```
 
-### Making a Progressive Web App
+#### Start Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Open a new terminal:
 
-### Advanced Configuration
+```bash
+cd frontend
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Visit `http://localhost:3000` in your browser.
 
-### Deployment
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+Oracle-Card-Reader/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── redux/
+│   │   ├── pages/
+│   │   └── App.js
+│   └── package.json
+│
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   └── server.js
+│
+└── README.md
+```
 
-### `npm run build` fails to minify
+## 📈 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 🌐 Add multilingual support
+- 🎨 Add drag-and-drop card layout
+- 📊 Visualization dashboard of past readings
+- 📦 Export readings to PDF or email
+- 📱 Publish mobile app version (React Native)
+
+## 🧪 Testing
+
+- Backend unit testing using **JUnit**
+- Manual testing for card flows and authentication
+- Postman used for API testing
+
+## 🙋‍♂️ Why This Project?
+
+Oracle cards are used by many for introspection and mindfulness. By digitizing this experience, the Oracle Card Reader allows users to access spiritual tools online in a structured, secure, and beautiful way. The project was also a platform to learn full-stack development practices.
+
+## 👨‍💻 Author
+
+**Prabhav Nasa** – Developer and Designer  
+[GitHub](https://github.com/PrabhavNasa) | [LinkedIn](https://linkedin.com/in/prabhavnasa23)
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ during my full-stack internship.
