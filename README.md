@@ -1,4 +1,4 @@
-# Backend Repository Link - 
+# Backend Repository Link - https://github.com/PrabhavNasa/Oracle-card-reader-Backend/
 # 🔮 Oracle Card Reader
 
 The **Oracle Card Reader** is a full-stack web application that allows users to interact with a custom oracle card system online. Users can draw cards, interpret meanings, save their readings, and revisit their personal oracle history. The application blends spiritual introspection with modern web technology, offering a sleek and intuitive platform for self-guidance and reflection.
